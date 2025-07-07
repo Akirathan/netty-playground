@@ -1,0 +1,7 @@
+{
+  "reflection": [
+    {
+      "type": "io.netty.internal.tcnative.Library"
+    }
+  ]
+}
