@@ -1,13 +1,11 @@
 package org.akirathan.netty;
 
-import io.netty.buffer.ByteBuf;
-import io.netty.handler.codec.http.DefaultHttpHeadersFactory;
-import io.netty.handler.codec.http.HttpHeaderNames;
-import io.netty.handler.codec.http.HttpHeaders;
-import io.netty.handler.ssl.SslProvider;
 import io.netty.internal.tcnative.Library;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.File;
+import java.io.IOException;
 
 public class Main {
   private volatile static Class<?> libClass;
@@ -15,7 +13,6 @@ public class Main {
 
   public static void main(String[] args) {
     LOGGER.info("Starting netty playground...");
-    //AzureConnector.listBlob();
     loadNativeLibEntrypoint();
   }
 
@@ -52,25 +49,5 @@ public class Main {
       throw new RuntimeException("Failed to load native library", t);
     }
     System.out.println("Successfully loaded native library: " + libName);
-  }
-
-  /**
-   * {@code isAlpnSupported} is called from {@code AzureStorage.listBlob}.
-   * And it fails in Enso.
-   */
-  private static void tryLoadSslProvider() {
-    var isAlpnSupported = SslProvider.isAlpnSupported(SslProvider.OPENSSL);
-    System.out.println("isAlpnSupported on OpenSSL = " + isAlpnSupported);
-  }
-
-  /**
-   * Works fine in both JVM and NI.
-   */
-  private static void createHttpHeader() {
-    var headerFac = DefaultHttpHeadersFactory.headersFactory();
-    var header = headerFac.newHeaders();
-    header.add(HttpHeaderNames.CONTENT_TYPE, "text/plain");
-    header.add(HttpHeaderNames.CONTENT_LENGTH, "0");
-    System.out.println("header.toString() = " + header);
   }
 }
