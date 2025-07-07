@@ -1,0 +1,198 @@
+/home/pavel/.sdkman/candidates/java/24.0.1-graalce/bin/java -Djava.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib:/home/pavel/dev/netty-playground -javaagent:/home/pavel/.local/share/JetBrains/Toolbox/apps/intellij-idea-community-edition/lib/idea_rt.jar=39677 -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath /home/pavel/dev/netty-playground/target/classes:/home/pavel/.m2/repository/com/azure/azure-storage-blob/12.30.0/azure-storage-blob-12.30.0.jar:/home/pavel/.m2/repository/com/azure/azure-xml/1.2.0/azure-xml-1.2.0.jar:/home/pavel/.m2/repository/com/azure/azure-core/1.55.3/azure-core-1.55.3.jar:/home/pavel/.m2/repository/com/azure/azure-json/1.5.0/azure-json-1.5.0.jar:/home/pavel/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/home/pavel/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:/home/pavel/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/home/pavel/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.2/jackson-datatype-jsr310-2.17.2.jar:/home/pavel/.m2/repository/io/projectreactor/reactor-core/3.4.41/reactor-core-3.4.41.jar:/home/pavel/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/home/pavel/.m2/repository/com/azure/azure-core-http-netty/1.15.11/azure-core-http-netty-1.15.11.jar:/home/pavel/.m2/repository/io/netty/netty-handler-proxy/4.1.118.Final/netty-handler-proxy-4.1.118.Final.jar:/home/pavel/.m2/repository/io/netty/netty-codec-socks/4.1.118.Final/netty-codec-socks-4.1.118.Final.jar:/home/pavel/.m2/repository/io/netty/netty-codec-http2/4.1.118.Final/netty-codec-http2-4.1.118.Final.jar:/home/pavel/.m2/repository/io/netty/netty-transport-native-epoll/4.1.118.Final/netty-transport-native-epoll-4.1.118.Final-linux-x86_64.jar:/home/pavel/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.118.Final/netty-transport-classes-epoll-4.1.118.Final.jar:/home/pavel/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.118.Final/netty-transport-native-kqueue-4.1.118.Final-osx-x86_64.jar:/home/pavel/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.118.Final/netty-transport-classes-kqueue-4.1.118.Final.jar:/home/pavel/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.0.48/reactor-netty-http-1.0.48.jar:/home/pavel/.m2/repository/io/netty/netty-resolver-dns/4.1.112.Final/netty-resolver-dns-4.1.112.Final.jar:/home/pavel/.m2/repository/io/netty/netty-codec-dns/4.1.112.Final/netty-codec-dns-4.1.112.Final.jar:/home/pavel/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.112.Final/netty-resolver-dns-native-macos-4.1.112.Final-osx-x86_64.jar:/home/pavel/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.112.Final/netty-resolver-dns-classes-macos-4.1.112.Final.jar:/home/pavel/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.0.48/reactor-netty-core-1.0.48.jar:/home/pavel/.m2/repository/com/azure/azure-storage-common/12.29.0/azure-storage-common-12.29.0.jar:/home/pavel/.m2/repository/com/azure/azure-storage-internal-avro/12.15.0/azure-storage-internal-avro-12.15.0.jar:/home/pavel/.m2/repository/ch/qos/logback/logback-classic/1.5.16/logback-classic-1.5.16.jar:/home/pavel/.m2/repository/ch/qos/logback/logback-core/1.5.16/logback-core-1.5.16.jar:/home/pavel/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/home/pavel/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.70.Final/netty-tcnative-boringssl-static-2.0.70.Final.jar:/home/pavel/.m2/repository/io/netty/netty-tcnative-classes/2.0.70.Final/netty-tcnative-classes-2.0.70.Final.jar:/home/pavel/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.70.Final/netty-tcnative-boringssl-static-2.0.70.Final-linux-x86_64.jar:/home/pavel/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.70.Final/netty-tcnative-boringssl-static-2.0.70.Final-linux-aarch_64.jar:/home/pavel/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.70.Final/netty-tcnative-boringssl-static-2.0.70.Final-osx-x86_64.jar:/home/pavel/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.70.Final/netty-tcnative-boringssl-static-2.0.70.Final-osx-aarch_64.jar:/home/pavel/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.70.Final/netty-tcnative-boringssl-static-2.0.70.Final-windows-x86_64.jar:/home/pavel/.m2/repository/io/netty/netty-common/4.1.118.Final/netty-common-4.1.118.Final.jar:/home/pavel/.m2/repository/io/netty/netty-buffer/4.1.118.Final/netty-buffer-4.1.118.Final.jar:/home/pavel/.m2/repository/io/netty/netty-codec/4.1.118.Final/netty-codec-4.1.118.Final.jar:/home/pavel/.m2/repository/io/netty/netty-transport/4.1.118.Final/netty-transport-4.1.118.Final.jar:/home/pavel/.m2/repository/io/netty/netty-codec-http/4.1.118.Final/netty-codec-http-4.1.118.Final.jar:/home/pavel/.m2/repository/io/netty/netty-handler/4.1.118.Final/netty-handler-4.1.118.Final.jar:/home/pavel/.m2/repository/io/netty/netty-resolver/4.1.118.Final/netty-resolver-4.1.118.Final.jar:/home/pavel/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.118.Final/netty-transport-native-unix-common-4.1.118.Final.jar org.akirathan.netty.Main
+2025-07-07 12:56:44 [main] INFO  org.akirathan.netty.Main - Starting netty playground...
+2025-07-07 12:56:44 [main] DEBUG c.a.c.implementation.ReflectionUtils - Attempting to use java.lang.invoke package to handle reflection.
+2025-07-07 12:56:44 [main] DEBUG c.a.c.implementation.ReflectionUtils - Successfully used java.lang.invoke package to handle reflection.
+2025-07-07 12:56:45 [main] DEBUG c.a.c.implementation.util.Providers - {"az.sdk.message":"Loaded default provider.","providerName":"com.azure.core.http.netty.NettyAsyncHttpClientProvider","providerClass":"com.azure.core.http.HttpClientProvider"}
+2025-07-07 12:56:45 [main] DEBUG reactor.util.Loggers - Using Slf4j logging framework
+2025-07-07 12:56:45 [main] DEBUG i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+2025-07-07 12:56:45 [main] DEBUG i.n.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2025-07-07 12:56:45 [main] DEBUG i.n.util.internal.PlatformDependent0 - Java version: 24
+2025-07-07 12:56:45 [main] DEBUG i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2025-07-07 12:56:45 [main] DEBUG i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe base methods: all available
+2025-07-07 12:56:45 [main] DEBUG i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.storeFence: available
+2025-07-07 12:56:45 [main] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2025-07-07 12:56:45 [main] DEBUG i.n.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2025-07-07 12:56:45 [main] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2025-07-07 12:56:45 [main] DEBUG i.n.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @5a8806ef
+2025-07-07 12:56:45 [main] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+2025-07-07 12:56:45 [main] DEBUG i.n.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2025-07-07 12:56:45 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2025-07-07 12:56:45 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2025-07-07 12:56:45 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+2025-07-07 12:56:45 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2025-07-07 12:56:45 [main] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+2025-07-07 12:56:45 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2025-07-07 12:56:45 [main] DEBUG i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2025-07-07 12:56:45 [main] DEBUG i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2 (file:/home/pavel/.m2/repository/io/netty/netty-common/4.1.118.Final/netty-common-4.1.118.Final.jar)
+WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
+WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+2025-07-07 12:56:45 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2025-07-07 12:56:45 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2025-07-07 12:56:45 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2025-07-07 12:56:45 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2025-07-07 12:56:45 [main] DEBUG i.netty.util.NetUtilInitializations - Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+2025-07-07 12:56:45 [main] DEBUG io.netty.util.NetUtil - /proc/sys/net/core/somaxconn: 4096
+2025-07-07 12:56:45 [main] DEBUG i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.workdir: /tmp (io.netty.tmpdir)
+2025-07-07 12:56:45 [main] DEBUG i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.deleteLibAfterLoading: true
+2025-07-07 12:56:45 [main] DEBUG i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.tryPatchShadedId: true
+2025-07-07 12:56:45 [main] DEBUG i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.detectNativeLibraryDuplicates: true
+2025-07-07 12:56:45 [main] DEBUG i.n.u.internal.NativeLibraryLoader - Successfully loaded the library netty_tcnative_linux_x86_64
+2025-07-07 12:56:45 [main] DEBUG i.n.u.internal.NativeLibraryLoader - Loaded library with name 'netty_tcnative_linux_x86_64'
+2025-07-07 12:56:45 [main] DEBUG io.netty.handler.ssl.OpenSsl - Initialize netty-tcnative using engine: 'default'
+2025-07-07 12:56:45 [main] DEBUG io.netty.handler.ssl.OpenSsl - netty-tcnative using native library: BoringSSL
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by io.netty.util.internal.NativeLibraryUtil in an unnamed module (file:/home/pavel/.m2/repository/io/netty/netty-common/4.1.118.Final/netty-common-4.1.118.Final.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2025-07-07 12:56:45 [main] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+2025-07-07 12:56:45 [main] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+2025-07-07 12:56:45 [main] DEBUG i.n.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@263558c9
+2025-07-07 12:56:45 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 32
+2025-07-07 12:56:45 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 32
+2025-07-07 12:56:45 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+2025-07-07 12:56:45 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
+2025-07-07 12:56:45 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
+2025-07-07 12:56:45 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+2025-07-07 12:56:45 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+2025-07-07 12:56:45 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2025-07-07 12:56:45 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+2025-07-07 12:56:45 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2025-07-07 12:56:45 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
+2025-07-07 12:56:45 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2025-07-07 12:56:45 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.disableCacheFinalizersForFastThreadLocalThreads: false
+2025-07-07 12:56:45 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+2025-07-07 12:56:45 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2025-07-07 12:56:45 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2025-07-07 12:56:45 [main] DEBUG i.n.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3bd55d8
+2025-07-07 12:56:45 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2025-07-07 12:56:45 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2025-07-07 12:56:45 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+2025-07-07 12:56:45 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
+2025-07-07 12:56:45 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2025-07-07 12:56:45 [main] DEBUG i.n.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 => ECDHE-ECDSA-AES128-GCM-SHA256
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 => ECDHE-ECDSA-AES128-GCM-SHA256
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 => ECDHE-RSA-AES128-GCM-SHA256
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_128_GCM_SHA256 => ECDHE-RSA-AES128-GCM-SHA256
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 => ECDHE-ECDSA-AES256-GCM-SHA384
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 => ECDHE-ECDSA-AES256-GCM-SHA384
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 => ECDHE-RSA-AES256-GCM-SHA384
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_256_GCM_SHA384 => ECDHE-RSA-AES256-GCM-SHA384
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-ECDSA-CHACHA20-POLY1305
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-ECDSA-CHACHA20-POLY1305
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-RSA-CHACHA20-POLY1305
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-RSA-CHACHA20-POLY1305
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-PSK-CHACHA20-POLY1305
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-PSK-CHACHA20-POLY1305
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA => ECDHE-ECDSA-AES128-SHA
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_128_CBC_SHA => ECDHE-ECDSA-AES128-SHA
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA => ECDHE-RSA-AES128-SHA
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_128_CBC_SHA => ECDHE-RSA-AES128-SHA
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA => ECDHE-PSK-AES128-CBC-SHA
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_AES_128_CBC_SHA => ECDHE-PSK-AES128-CBC-SHA
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA => ECDHE-ECDSA-AES256-SHA
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_256_CBC_SHA => ECDHE-ECDSA-AES256-SHA
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA => ECDHE-RSA-AES256-SHA
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_256_CBC_SHA => ECDHE-RSA-AES256-SHA
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA => ECDHE-PSK-AES256-CBC-SHA
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_AES_256_CBC_SHA => ECDHE-PSK-AES256-CBC-SHA
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_128_GCM_SHA256 => AES128-GCM-SHA256
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_128_GCM_SHA256 => AES128-GCM-SHA256
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_256_GCM_SHA384 => AES256-GCM-SHA384
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_256_GCM_SHA384 => AES256-GCM-SHA384
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_128_CBC_SHA => AES128-SHA
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_128_CBC_SHA => AES128-SHA
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_PSK_WITH_AES_128_CBC_SHA => PSK-AES128-CBC-SHA
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_PSK_WITH_AES_128_CBC_SHA => PSK-AES128-CBC-SHA
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_256_CBC_SHA => AES256-SHA
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_256_CBC_SHA => AES256-SHA
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_PSK_WITH_AES_256_CBC_SHA => PSK-AES256-CBC-SHA
+2025-07-07 12:56:45 [main] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_PSK_WITH_AES_256_CBC_SHA => PSK-AES256-CBC-SHA
+2025-07-07 12:56:45 [main] DEBUG io.netty.handler.ssl.OpenSsl - Supported protocols (OpenSSL): [SSLv2Hello, TLSv1, TLSv1.1, TLSv1.2, TLSv1.3]
+2025-07-07 12:56:45 [main] DEBUG io.netty.handler.ssl.OpenSsl - Default cipher suites (OpenSSL): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256]
+2025-07-07 12:56:45 [main] DEBUG reactor.netty.tcp.TcpResources - [http] resources will use the default LoopResources: DefaultLoopResources {prefix=reactor-http, daemon=true, selectCount=16, workerCount=16}
+2025-07-07 12:56:45 [main] DEBUG reactor.netty.tcp.TcpResources - [http] resources will use the default ConnectionProvider: reactor.netty.resources.DefaultPooledConnectionProvider@247667dd
+2025-07-07 12:56:45 [main] DEBUG r.n.r.PooledConnectionProvider - Creating a new [http] client pool [PoolFactory{evictionInterval=PT0S, leasingStrategy=fifo, maxConnections=500, maxIdleTime=-1, maxLifeTime=-1, metricsEnabled=false, pendingAcquireMaxCount=1000, pendingAcquireTimeout=45000}] for [ensostorage.blob.core.windows.net/<unresolved>:443]
+2025-07-07 12:56:45 [main] DEBUG r.netty.resources.DefaultLoopIOUring - Default io_uring support : false
+2025-07-07 12:56:45 [main] DEBUG i.n.u.internal.NativeLibraryLoader - Successfully loaded the library /tmp/libnetty_transport_native_epoll_x86_6417054514707728854734.so
+2025-07-07 12:56:45 [main] DEBUG r.netty.resources.DefaultLoopEpoll - Default Epoll support : true
+2025-07-07 12:56:45 [main] DEBUG i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 32
+2025-07-07 12:56:45 [main] DEBUG i.n.u.concurrent.GlobalEventExecutor - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2025-07-07 12:56:45 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 31060 (auto-detected)
+2025-07-07 12:56:45 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: f0:57:a6:ff:fe:85:57:e6 (auto-detected)
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG r.n.r.PooledConnectionProvider - [f5bade6f] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG i.n.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3ea7e844
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG reactor.netty.tcp.SslProvider - [f5bade6f] SSL enabled using engine io.netty.handler.ssl.OpenSslEngine@1c13803c and SNI ensostorage.blob.core.windows.net/<unresolved>:443
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG r.netty.transport.TransportConfig - [f5bade6f] Initialized pipeline DefaultChannelPipeline{(reactor.left.sslHandler = io.netty.handler.ssl.SslHandler), (reactor.left.sslReader = reactor.netty.tcp.SslProvider$SslReadHandler), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG r.netty.transport.TransportConnector - [f5bade6f] Connecting to [ensostorage.blob.core.windows.net/20.60.17.196:443].
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG r.n.r.DefaultPooledConnectionProvider - [f5bade6f, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443] Registering pool release on close event for channel
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG r.n.r.PooledConnectionProvider - [f5bade6f, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443] Channel connected, now: 1 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG io.netty.handler.ssl.SslHandler - [id: 0xf5bade6f, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443] HANDSHAKEN: protocol:TLSv1.3 cipher suite:TLS_AES_256_GCM_SHA384
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG r.n.r.DefaultPooledConnectionProvider - [f5bade6f, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443] onStateChange(PooledConnection{channel=[id: 0xf5bade6f, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443]}, [connected])
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG r.n.r.DefaultPooledConnectionProvider - [f5bade6f-1, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443] onStateChange(GET{uri=null, connection=PooledConnection{channel=[id: 0xf5bade6f, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443]}}, [configured])
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG r.n.http.client.HttpClientConnect - [f5bade6f-1, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443] Handler is being applied: {uri=https://ensostorage.blob.core.windows.net/test-container?restype=container&sv=2024-11-04&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2025-08-30T19:03:22Z&st=2025-06-24T11:03:22Z&spr=https&sig=z1Gm3CUR896qh1eBfebjkMhsTD4Mw8cB9c3W40kl5z9rzC, method=GET}
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG r.n.r.DefaultPooledConnectionProvider - [f5bade6f-1, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443] onStateChange(GET{uri=/test-container, connection=PooledConnection{channel=[id: 0xf5bade6f, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443]}}, [request_prepared])
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG reactor.netty.ReactorNetty - [f5bade6f-1, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443] Added decoder [azureSdkHandler] at the end of the user pipeline, full pipeline: [reactor.left.sslHandler, reactor.left.httpCodec, azureSdkHandler, reactor.right.reactiveBridge, DefaultChannelPipeline$TailContext#0]
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG r.n.r.DefaultPooledConnectionProvider - [f5bade6f-1, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443] onStateChange(GET{uri=/test-container, connection=PooledConnection{channel=[id: 0xf5bade6f, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443]}}, [request_sent])
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG i.n.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@b339c0b
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG r.n.http.client.HttpClientOperations - [f5bade6f-1, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443] Received response (auto-read:false) : RESPONSE(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 403 Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.
+Content-Length: <filtered>
+Content-Type: <filtered>
+Server: <filtered>
+x-ms-request-id: <filtered>
+x-ms-error-code: <filtered>
+Date: <filtered>
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG r.n.r.DefaultPooledConnectionProvider - [f5bade6f-1, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443] onStateChange(GET{uri=/test-container, connection=PooledConnection{channel=[id: 0xf5bade6f, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443]}}, [response_received])
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG reactor.netty.channel.FluxReceive - [f5bade6f-1, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443] [terminated=false, cancelled=false, pending=0, error=null]: subscribing inbound receiver
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG r.n.http.client.HttpClientOperations - [f5bade6f-1, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443] Received last HTTP packet
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG r.n.r.DefaultPooledConnectionProvider - [f5bade6f, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443] onStateChange(GET{uri=/test-container, connection=PooledConnection{channel=[id: 0xf5bade6f, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443]}}, [response_completed])
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG reactor.netty.ReactorNetty - [f5bade6f, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443] Removed handler: azureSdkHandler, pipeline: DefaultChannelPipeline{(reactor.left.sslHandler = io.netty.handler.ssl.SslHandler), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG reactor.netty.ReactorNetty - [f5bade6f, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443] Non Removed handler: azureSdkHandler, context: null, pipeline: DefaultChannelPipeline{(reactor.left.sslHandler = io.netty.handler.ssl.SslHandler), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG r.n.r.DefaultPooledConnectionProvider - [f5bade6f, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443] onStateChange(GET{uri=/test-container, connection=PooledConnection{channel=[id: 0xf5bade6f, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443]}}, [disconnecting])
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG r.n.r.DefaultPooledConnectionProvider - [f5bade6f, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443] Releasing channel
+2025-07-07 12:56:45 [reactor-http-epoll-1] DEBUG r.n.r.PooledConnectionProvider - [f5bade6f, L:/192.168.68.61:59554 - R:ensostorage.blob.core.windows.net/20.60.17.196:443] Channel cleaned, now: 0 active connections, 1 inactive connections and 0 pending acquire requests.
+2025-07-07 12:56:45 [main] ERROR c.a.storage.blob.BlobContainerClient - If you are using a StorageSharedKeyCredential, and the server returned an error message that says 'Signature did not match', you can compare the string to sign with the one generated by the SDK. To log the string to sign, pass in the context key value pair 'Azure-Storage-Log-String-To-Sign': true to the appropriate method call.If you are using a SAS token, and the server returned an error message that says 'Signature did not match', you can compare the string to sign with the one generated by the SDK. To log the string to sign, pass in the context key value pair 'Azure-Storage-Log-String-To-Sign': true to the appropriate generateSas method call.Please remember to disable 'Azure-Storage-Log-String-To-Sign' before going to production as this string can potentially contain PII.If you are using a StorageSharedKeyCredential, and the server returned an error message that says 'Signature did not match', you can compare the string to sign with the one generated by the SDK. To log the string to sign, pass in the context key value pair 'Azure-Storage-Log-String-To-Sign': true to the appropriate method call.If you are using a SAS token, and the server returned an error message that says 'Signature did not match', you can compare the string to sign with the one generated by the SDK. To log the string to sign, pass in the context key value pair 'Azure-Storage-Log-String-To-Sign': true to the appropriate generateSas method call.Please remember to disable 'Azure-Storage-Log-String-To-Sign' before going to production as this string can potentially contain PII.Status code 403, "﻿<?xml version="1.0" encoding="utf-8"?><Error><Code>AuthenticationFailed</Code><Message>Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.RequestId:09effb97-101e-0033-292d-ef00a6000000Time:2025-07-07T10:56:45.8801060Z</Message><AuthenticationErrorDetail>Signature fields not well formed.</AuthenticationErrorDetail></Error>"
+com.azure.storage.blob.models.BlobStorageException: If you are using a StorageSharedKeyCredential, and the server returned an error message that says 'Signature did not match', you can compare the string to sign with the one generated by the SDK. To log the string to sign, pass in the context key value pair 'Azure-Storage-Log-String-To-Sign': true to the appropriate method call.
+If you are using a SAS token, and the server returned an error message that says 'Signature did not match', you can compare the string to sign with the one generated by the SDK. To log the string to sign, pass in the context key value pair 'Azure-Storage-Log-String-To-Sign': true to the appropriate generateSas method call.
+Please remember to disable 'Azure-Storage-Log-String-To-Sign' before going to production as this string can potentially contain PII.
+If you are using a StorageSharedKeyCredential, and the server returned an error message that says 'Signature did not match', you can compare the string to sign with the one generated by the SDK. To log the string to sign, pass in the context key value pair 'Azure-Storage-Log-String-To-Sign': true to the appropriate method call.
+If you are using a SAS token, and the server returned an error message that says 'Signature did not match', you can compare the string to sign with the one generated by the SDK. To log the string to sign, pass in the context key value pair 'Azure-Storage-Log-String-To-Sign': true to the appropriate generateSas method call.
+Please remember to disable 'Azure-Storage-Log-String-To-Sign' before going to production as this string can potentially contain PII.
+Status code 403, "﻿<?xml version="1.0" encoding="utf-8"?><Error><Code>AuthenticationFailed</Code><Message>Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.
+RequestId:09effb97-101e-0033-292d-ef00a6000000
+Time:2025-07-07T10:56:45.8801060Z</Message><AuthenticationErrorDetail>Signature fields not well formed.</AuthenticationErrorDetail></Error>"
+	at com.azure.storage.blob.implementation.util.ModelHelper.mapToBlobStorageException(ModelHelper.java:660)
+	at com.azure.storage.blob.implementation.ContainersImpl.getPropertiesWithResponse(ContainersImpl.java:1474)
+	at com.azure.storage.blob.BlobContainerClient.lambda$getPropertiesWithResponse$2(BlobContainerClient.java:672)
+	at com.azure.storage.common.implementation.StorageImplUtils.sendRequest(StorageImplUtils.java:494)
+	at com.azure.storage.blob.BlobContainerClient.getPropertiesWithResponse(BlobContainerClient.java:674)
+	at com.azure.storage.blob.BlobContainerClient.existsWithResponse(BlobContainerClient.java:345)
+	at com.azure.storage.blob.BlobContainerClient.exists(BlobContainerClient.java:324)
+	at org.akirathan.netty.AzureConnector.listBlob(AzureConnector.java:41)
+	at org.akirathan.netty.AzureConnector.listBlob(AzureConnector.java:18)
+	at org.akirathan.netty.Main.main(Main.java:18)
+Exception in thread "main" com.azure.storage.blob.models.BlobStorageException: If you are using a StorageSharedKeyCredential, and the server returned an error message that says 'Signature did not match', you can compare the string to sign with the one generated by the SDK. To log the string to sign, pass in the context key value pair 'Azure-Storage-Log-String-To-Sign': true to the appropriate method call.
+If you are using a SAS token, and the server returned an error message that says 'Signature did not match', you can compare the string to sign with the one generated by the SDK. To log the string to sign, pass in the context key value pair 'Azure-Storage-Log-String-To-Sign': true to the appropriate generateSas method call.
+Please remember to disable 'Azure-Storage-Log-String-To-Sign' before going to production as this string can potentially contain PII.
+If you are using a StorageSharedKeyCredential, and the server returned an error message that says 'Signature did not match', you can compare the string to sign with the one generated by the SDK. To log the string to sign, pass in the context key value pair 'Azure-Storage-Log-String-To-Sign': true to the appropriate method call.
+If you are using a SAS token, and the server returned an error message that says 'Signature did not match', you can compare the string to sign with the one generated by the SDK. To log the string to sign, pass in the context key value pair 'Azure-Storage-Log-String-To-Sign': true to the appropriate generateSas method call.
+Please remember to disable 'Azure-Storage-Log-String-To-Sign' before going to production as this string can potentially contain PII.
+Status code 403, "﻿<?xml version="1.0" encoding="utf-8"?><Error><Code>AuthenticationFailed</Code><Message>Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.
+RequestId:09effb97-101e-0033-292d-ef00a6000000
+Time:2025-07-07T10:56:45.8801060Z</Message><AuthenticationErrorDetail>Signature fields not well formed.</AuthenticationErrorDetail></Error>"
+	at com.azure.storage.blob.implementation.util.ModelHelper.mapToBlobStorageException(ModelHelper.java:660)
+	at com.azure.storage.blob.implementation.ContainersImpl.getPropertiesWithResponse(ContainersImpl.java:1474)
+	at com.azure.storage.blob.BlobContainerClient.lambda$getPropertiesWithResponse$2(BlobContainerClient.java:672)
+	at com.azure.storage.common.implementation.StorageImplUtils.sendRequest(StorageImplUtils.java:494)
+	at com.azure.storage.blob.BlobContainerClient.getPropertiesWithResponse(BlobContainerClient.java:674)
+	at com.azure.storage.blob.BlobContainerClient.existsWithResponse(BlobContainerClient.java:345)
+	at com.azure.storage.blob.BlobContainerClient.exists(BlobContainerClient.java:324)
+	at org.akirathan.netty.AzureConnector.listBlob(AzureConnector.java:41)
+	at org.akirathan.netty.AzureConnector.listBlob(AzureConnector.java:18)
+	at org.akirathan.netty.Main.main(Main.java:18)
+
+Process finished with exit code 1
