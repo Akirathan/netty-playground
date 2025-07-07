@@ -8,16 +8,11 @@ import java.io.File;
 import java.io.IOException;
 
 public class Main {
-  private volatile static Class<?> libClass;
   private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
   public static void main(String[] args) {
     LOGGER.info("Starting netty playground...");
     loadNativeLibEntrypoint();
-  }
-
-  private static void ensureClassesInNI() {
-    libClass = Library.class;
   }
 
   private static void loadNativeLibEntrypoint() {
