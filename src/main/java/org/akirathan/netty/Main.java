@@ -15,7 +15,8 @@ public class Main {
 
   public static void main(String[] args) {
     LOGGER.info("Starting netty playground...");
-    AzureConnector.listBlob();
+    //AzureConnector.listBlob();
+    loadNativeLibEntrypoint();
   }
 
   private static void ensureClassesInNI() {
@@ -23,10 +24,22 @@ public class Main {
   }
 
   private static void loadNativeLibEntrypoint() {
-    var libPath = System.getProperty("java.library.path");
-    System.out.println("libPath = " + libPath);
-    ensureClassesInNI();
+    addCurDirToLibPath();
     loadNativeLib();
+  }
+
+  private static void addCurDirToLibPath() {
+    String curDir;
+    try {
+      curDir = new File(".").getCanonicalPath();
+    } catch (IOException e) {
+      throw new IllegalStateException(e);
+    }
+    var propName = "java.library.path";
+    var libPath = System.getProperty(propName);
+    var newLibPath = libPath + ":" + curDir;
+    System.setProperty(propName, newLibPath);
+    LOGGER.info("Updated {} to [{}]", propName, newLibPath);
   }
 
   private static void loadNativeLib() {
