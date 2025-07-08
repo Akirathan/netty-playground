@@ -86,6 +86,8 @@
                                     <quickBuild>true</quickBuild>
                                     <buildArgs>
                                         <arg>-ea</arg>
+                                        <arg>-g</arg>
+                                        <arg>-O0</arg>
                                         <arg>--initialize-at-build-time=com.fasterxml.jackson.core</arg>
                                         <arg>--initialize-at-build-time=ch.qos.logback.classic</arg>
                                         <arg>--initialize-at-build-time=ch.qos.logback.core</arg>
@@ -118,6 +120,30 @@
                     <source>24</source>
                     <target>24</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.6.0</version>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <mainClass>org.akirathan.netty.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
