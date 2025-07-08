@@ -1,6 +1,5 @@
 package org.akirathan.netty;
 
-import io.netty.internal.tcnative.Library;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
